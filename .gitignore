@@ -1,0 +1,56 @@
+node_modules
+**/node_modules
+**/node_modules/**
+# Node dependencies
+/node_modules
+/frontend/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build output directories
+**/dist
+/dist
+/frontend/build
+
+# SQLite database
+**.db
+**.env
+
+# Electron cache
+/electron-builder-cache
+
+# React build artifacts
+build/
+
+# Runtime data
+/temp
+/temp_files
+*.tmp
+
+# Editor folders
+.vscode/
+.idea/
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Public
+**/Api/src/public/images/**
+
+# DIST
+/Frontend/dist
+/Frontend/dist/**
+
+# DOC TEMP FILES
+openapi_v3.json
+openapi.json

@@ -31,7 +31,7 @@ function App() {
   );
 
   const getUser = async (initial = true) => {
-    const { userData } = await api.get("client/auth/validate").then((x) => x.data);
+    const { userData } = await api.get("/auth/validate").then((x) => x.data);
 
     if (initial) {
       setUser(userData);

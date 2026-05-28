@@ -26,7 +26,7 @@ export default function Login() {
     await new Promise((r) => setTimeout(r, 1000));
 
     try {
-      res = await api.post("client/auth/login?is_admin=1", {
+      res = await api.post("/auth/login", {
         username,
         password,
       });
@@ -37,7 +37,7 @@ export default function Login() {
     }
     if (!res) return setError("Ha ocurrido un error");
 
-    if (res.status != 200)
+    if (res?.status != 200)
       return setError(res.response.data.message || "Error desconocido");
     if (res.status == 200) {
       getUser();

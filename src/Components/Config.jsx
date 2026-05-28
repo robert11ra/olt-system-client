@@ -18,7 +18,7 @@ export default function Users() {
   );
 
   const fetchData = async () => {
-    let { data } = await api.get("/users/all");
+    let { data } = await api.get("/users");
     data = data.map((row) => ({
       ...row,
       dropdown: row,

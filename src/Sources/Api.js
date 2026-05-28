@@ -1,8 +1,8 @@
-import axios from "axios";
+import { create } from "axios";
 import downloadFiles from "../Components/Utilities/downloadFiles";
 
-const api = axios.create({
-  baseURL: "http://localhost:3000",
+const api = create({
+  baseURL: "http://localhost:3000/client",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",

@@ -19,7 +19,7 @@ export default function Companies() {
     const { t, variantButtonColor } = useContext(Contexts.globalContext);
 
     const fetchData = async () => {
-        let { data } = await api.get("/companies/all");
+        let { data } = await api.get("/companies");
         data = data.map((row) => ({ ...row, dropdown: row }));
         setCompanies(data);
     };

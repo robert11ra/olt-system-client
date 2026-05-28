@@ -162,7 +162,7 @@ export default function Users() {
   return (
     <>
       <PageHeader className={"flex !justify-between"}>
-        <Heading level="h1">{t("users")}</Heading>
+        <Heading level="h1">{t("config")}</Heading>
       </PageHeader>
       <div className="flex flex-col gap-4 h-auto py-10">
         <AdaptableTable

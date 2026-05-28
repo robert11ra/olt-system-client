@@ -21,62 +21,27 @@ export default function Nav() {
 
   const routes = [
     {
-      name: t("home"),
-      path: "/",
-      icon: <box-icon type="solid" color="gray" name="user-account"></box-icon>,
+      name: t("wifi"),
+      path: "/wifi",
+      icon: <box-icon color="gray" name="wifi"></box-icon>,
+      iconBlack: (
+        <box-icon
+          color={darkMode ? "rgb(229, 229, 229)" : "black"}
+          name="wifi"></box-icon>
+      ),
+    },
+    {
+      separator: true
+    },
+    {
+      name: t("config"),
+      path: "/config",
+      icon: <box-icon type="solid" color="gray" name="cog"></box-icon>,
       iconBlack: (
         <box-icon
           type="solid"
           color={darkMode ? "rgb(229, 229, 229)" : "black"}
-          name="user-account"
-        ></box-icon>
-      ),
-    },
-    {
-      name: t("clients"),
-      path: "/clients",
-      icon: <box-icon type="solid" color="gray" name="user-account"></box-icon>,
-      iconBlack: (
-        <box-icon type="solid"
-          color={darkMode ? "rgb(229, 229, 229)" : "black"}
-          name="user-account"></box-icon>
-      ),
-    },
-    {
-      name: t("companies"),
-      path: "/companies",
-      icon: <box-icon type="solid" color="gray" name="user-account"></box-icon>,
-      iconBlack: (
-        <box-icon type="solid"
-          color={darkMode ? "rgb(229, 229, 229)" : "black"}
-          name="user-account"></box-icon>
-      ),
-    },
-    {
-      name: t("mikrotiks"),
-      path: "/mikrotiks",
-      icon: <box-icon type="solid" color="gray" name="user-account"></box-icon>,
-      iconBlack: (
-        <box-icon type="solid" color={darkMode ? "rgb(229, 229, 229)" : "black"} name="user-account"></box-icon>
-      ),
-    },
-    {
-      name: t("olts"),
-      path: "/olts",
-      icon: <box-icon type="solid" color="gray" name="user-account"></box-icon>,
-      iconBlack: (
-        <box-icon type="solid" color={darkMode ? "rgb(229, 229, 229)" : "black"} name="user-account"></box-icon>
-      ),
-    },
-    {
-      name: t("users"),
-      path: "/users",
-      icon: <box-icon type="solid" color="gray" name="user-account"></box-icon>,
-      iconBlack: (
-        <box-icon
-          type="solid"
-          color={darkMode ? "rgb(229, 229, 229)" : "black"}
-          name="user-account"
+          name="cog"
         ></box-icon>
       ),
     },

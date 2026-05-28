@@ -1,12 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import PrincipalLayout from "./Components/Subcomponents/PrincipalLayout.jsx";
-import Users from "./Components/Users.jsx";
-import Clients from "./Components/Clients.jsx";
-import Companies from "./Components/Companies.jsx";
-import Mikrotiks from "./Components/Mikrotiks.jsx";
-import Olts from "./Components/Olts.jsx";
-import Plans from "./Components/Plans.jsx";
+import Config from "./Components/Config.jsx";
+import Wifi from "./Components/Wifi.jsx";
 import Login from "./Components/Login.jsx";
 import Contexts from "./Sources/Contexts.js";
 import api from "./Sources/Api.js";
@@ -35,7 +31,7 @@ function App() {
   );
 
   const getUser = async (initial = true) => {
-    const { userData } = await api.get("/auth/validate").then((x) => x.data);
+    const { userData } = await api.get("client/auth/validate").then((x) => x.data);
 
     if (initial) {
       setUser(userData);
@@ -106,13 +102,8 @@ function App() {
 
                 {viewAvailable && (
                   <>
-                    <Route path="/" element={<Users />} />
-                    <Route path="/users" element={<Users />} />
-                    <Route path="/clients" element={<Clients />} />
-                    <Route path="/companies" element={<Companies />} />
-                    <Route path="/mikrotiks" element={<Mikrotiks />} />
-                    <Route path ="/olts" element={<Olts />} />
-                    <Route path="/plans" element={<Plans />} />
+                    <Route path="/config" element={<Config />} />
+                    <Route path="/wifi" element={<Wifi />} />
                   </>
                 )}
 

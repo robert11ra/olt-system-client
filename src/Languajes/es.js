@@ -614,5 +614,7 @@ export default {
   error_created_plan: "Error al crear el plan",
   success_updated_plan: "Plan actualizado correctamente",
   error_updated_plan: "Error al actualizar el plan",
-  edit_plan: "Editar Plan", 
+  edit_plan: "Editar Plan",
+  wifi: "WiFi",
+  config: "Configuración",
 };

@@ -26,7 +26,7 @@ export default function Login() {
     await new Promise((r) => setTimeout(r, 1000));
 
     try {
-      res = await api.post("/auth/login?is_admin=1", {
+      res = await api.post("client/auth/login?is_admin=1", {
         username,
         password,
       });
@@ -41,7 +41,7 @@ export default function Login() {
       return setError(res.response.data.message || "Error desconocido");
     if (res.status == 200) {
       getUser();
-      window.location.href = "/users";
+      window.location.href = "/wifi";
     }
     LoadAnimation.hide();
   };

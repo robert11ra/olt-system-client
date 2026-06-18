@@ -33,18 +33,18 @@ export default function Nav() {
     {
       separator: true
     },
-    {
-      name: t("config"),
-      path: "/config",
-      icon: <box-icon type="solid" color="gray" name="cog"></box-icon>,
-      iconBlack: (
-        <box-icon
-          type="solid"
-          color={darkMode ? "rgb(229, 229, 229)" : "black"}
-          name="cog"
-        ></box-icon>
-      ),
-    },
+    // {
+    //   name: t("config"),
+    //   path: "/config",
+    //   icon: <box-icon type="solid" color="gray" name="cog"></box-icon>,
+    //   iconBlack: (
+    //     <box-icon
+    //       type="solid"
+    //       color={darkMode ? "rgb(229, 229, 229)" : "black"}
+    //       name="cog"
+    //     ></box-icon>
+    //   ),
+    // },
   ].filter((x) => x);
 
   const logout = () => {
